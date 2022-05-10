@@ -7,6 +7,7 @@ export const navItems = [
   { id: 5, name: "best seller", link: "/best-seller" },
 ];
 
+// $ wszystkie obiekty mają navId: 1? Czemu to służy?
 export const catalogMenu = [
   { navId: 1, id: 0, name: "Pulleys", link: "/pulleys" },
   { navId: 1, id: 1, name: "Pull Up Bars", link: "/pull-up-bars" },

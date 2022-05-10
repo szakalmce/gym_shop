@@ -10,6 +10,7 @@ import {
 import { formatCurrecy } from "../../../utils/fn";
 import { NavLink } from "react-router-dom";
 
+// $ dodaj linie odstępu przed constami
 const Wrapper = styled.div`
   position: fixed;
   right: 0;
@@ -138,6 +139,7 @@ const CartSidebar = () => {
 
   const handleRemove = (product) => {
     dispatch(removeCart(product.id));
+    // $ pousuwaj console logi których nie potrzebujesz
     console.log(product.id);
   };
 

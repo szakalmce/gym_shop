@@ -12,6 +12,10 @@ import {
 export const footerData = [
   [
     {
+      // $ Math.random() w przypadku "id" nie jest dobrym pomysłem - mogą wystąpić takie same idki, a powinny być unikalne
+      // polecam zainstalowanie biblioteki uuid z npm
+      // Jeśli jest property title to czemu przechowuje boolean, zamiast string? Jeśli ma przechowywać boolean to zmień nazwe property na bardzeij adekwatne
+      // te obiekty nie są spójne, zawierają różne property i różną ilość, w przyszłości będzie powodować to błędy w runtime
       id: Math.random(),
       value: "Information",
       title: true,

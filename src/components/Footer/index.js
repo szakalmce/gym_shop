@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Container } from "../../styles/GlobalStyles";
 import { footerData } from "./data";
 
+// $ dodaj linie odstępu przed constami
+
 const bgImage =
   "https://cdn.shopify.com/s/files/1/0550/8130/4322/files/footer-bg.jpg?v=1634555462";
 
@@ -157,6 +159,7 @@ const Footer = () => {
           </FooterInner>
           <SubFooterInner>
             <SubFooterContent>
+              {/*  // $ Powered by Shopify ? */}
               <Copy>
                 &copy; 2022, <NavLink to="/">Bodyflex Demo Store</NavLink>{" "}
                 Powered by Shopify

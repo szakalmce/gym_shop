@@ -70,6 +70,8 @@ const RecentBlogSlider = () => {
   const postsLength = recentBlogData.length - 3;
 
   const handleSlide = (direction) => {
+    // $ czy slide'y można przesuwać w nieskończoność?
+    // przemyśl dodanie jakiegoś ograniczenia przy przesuwaniu w lewo/prawo
     if (direction === "left") {
       setSlide(slide - 1);
       if (slide === 0) {

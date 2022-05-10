@@ -40,7 +40,10 @@ const productsSlice = createSlice({
       state.addToCartItem = action.payload;
     },
 
+    // $ przemyśl nazewnictwo. Jeśli funkcja nie tylko otwiera modal, ale też zamyka
+    // to nie powinno się nazywać "open" tylko np. "toggle" - bardziej intuicyjne
     openModalInCart: (state, action) => {
+      // jeśli cartModal przechowuje stan zamknięcia/otwarcia modala to proponuje zmienić nazwe na bardziej opisową
       state.cartModal = action.payload;
     },
 
@@ -79,6 +82,8 @@ const productsSlice = createSlice({
       }
     },
     // CART ACTIONS
+     // przemyśl nazewnictwo. Jeśli funkcja nie tylko otwiera modal, ale też zamyka
+    // to nie powinno się nazywać "open" tylko np. "toggle" - bardziej intuicyjne
     openSidebarCart: (state, action) => {
       state.openSideCart = action.payload;
     },

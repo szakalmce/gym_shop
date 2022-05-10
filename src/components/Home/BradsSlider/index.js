@@ -14,6 +14,7 @@ const SlideWrapper = styled.div``;
 const Brand = styled.div``;
 const Img = styled.img``;
 
+// $ pozamieniaj wszędzie var na const lub let (w większości przypadków na const)
 var settings = {
   infinite: true,
   speed: 500,
@@ -69,6 +70,7 @@ const BrandSlider = () => {
     // </Container>
     <Container>
       <Wrapper>
+        {/*  // $ staraj się unikać inline styles, przenieś to do klasy css i przypisz jako className */}
         <Title style={{ marginBottom: "2rem" }}>OUR BRAND</Title>
         <SlideWrapper>
           <Slider {...settings}>

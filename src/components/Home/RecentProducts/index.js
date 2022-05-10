@@ -121,6 +121,7 @@ const IconWrapper = styled.li`
 `;
 
 const RecentProducts = () => {
+  // $ pousuwaj niepotrzebne consty
   const [inWishlist, setInWishlist] = useState(false);
 
   const dispatch = useDispatch();

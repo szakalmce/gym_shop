@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { MdClose } from "react-icons/md";
 import { openModalInCart } from "../../../redux/productsReducer";
 import { NavLink } from "react-router-dom";
+
+// $ dodaj linie odstępu przed constami
 const Wrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
